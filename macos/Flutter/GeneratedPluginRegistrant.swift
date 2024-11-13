@@ -10,7 +10,7 @@ import audio_session
 import audioplayers_darwin
 import just_audio
 import path_provider_foundation
-import sqflite_darwin
+import sqflite
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   AudioServicePlugin.register(with: registry.registrar(forPlugin: "AudioServicePlugin"))

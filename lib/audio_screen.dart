@@ -51,7 +51,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
   void initState() {
     super.initState();
     _mutedAudioPlayer = AudioPlayer()..setAsset('assets/audio/harekrishna.mp3')..setVolume(0);
-    _newAudioPlayer = AudioPlayer()..setAsset('assets/audio/bells.mp3')..setVolume(1.0);
+    _newAudioPlayer = AudioPlayer()..setAsset('assets/audio/flute.mp3')..setVolume(1.0);
     
     _mutedAudioPlayer.playerStateStream.listen((playerState) {
       if (playerState.processingState == ProcessingState.completed) {
@@ -112,7 +112,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
   Future<Map<Duration, String>> fetchLyrics() async {
     // Shortened lyrics for testing
     final lrcContent = '''
-[00:00.33]Hare Krishna Hare Krishna Krishna - Vivek Prakash
+[00:00.33]Hare Krishna Hare Krishna Krishna 
 [00:24.01]Hare Krishno hare Krishno
 [00:25.96]Krishno Krishno hare hare
 [00:29.11]Hare Ram hare Ram
